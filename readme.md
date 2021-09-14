@@ -65,4 +65,4 @@ Si vieramos un ejemplo básico de código tendriamos lo siguiente:
 
 <div align="center"><img src="descripcion/img/10.png" width="70%"/></div>
 
-Imagenes recopilaras de curso Angular 11 del grande [Carlos_Solís](https://www.linkedin.com/in/carlossolisdavila/?trk=lil_course)
+Imagenes recopilaras de curso Angular 11 del grande [Carlos_Solís](https://www.linkedin.com/in/carlossolisdavila/?trk=lil_course) y basado en los ejercicios de [este](https://github.com/siddharta1337/Angular-4-Esencial) repositorio.
