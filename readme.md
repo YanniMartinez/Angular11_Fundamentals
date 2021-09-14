@@ -14,6 +14,12 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+## Contenido:
+
+* [¿Qué es Angular?](#qué-es-angular)
+* [Partes de una App en Angular](#partes-de-una-app-en-angular-más-comunes)
+* 
+
 ## ¿Qué es Angular?
 
 Hoy en día Angular es una plataforma que puede ejecutarse en: 
