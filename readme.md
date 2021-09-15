@@ -7,17 +7,22 @@
 
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 ![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ## Contenido:
 
 * [¿Qué es Angular?](#qué-es-angular)
 * [Partes de una App en Angular](#partes-de-una-app-en-angular-más-comunes)
+* [Instala NodeJS](#instala-node-js)
+* [Instala TypeScript](#instala-typescript)
 * 
 
 ## ¿Qué es Angular?
@@ -86,3 +91,21 @@ Si vieramos un ejemplo básico de código tendriamos lo siguiente:
 <div align="center"><img src="descripcion/img/10.png" width="70%"/></div>
 
 Imagenes recopilaras de curso Angular 11 del grande [Carlos_Solís](https://www.linkedin.com/in/carlossolisdavila/?trk=lil_course) y basado en los ejercicios de [este](https://github.com/siddharta1337/Angular-4-Esencial) repositorio.
+
+## Instala Node JS
+
+Para el desarrollo de este proyecto se usará mucho **Node JS** para manejar todos los paquetes, si aún no se tiene instalado puede consultarse en su [Sitio oficial de NodeJS](https://nodejs.org/es/), aquí podrás encontrar toda la información al respecto del proceso de instalación en función de tu sistema operativo.
+
+## Instala TypeScript
+
+TypeScript es un super set de JavaScript, es decir, un JavaScript con herramientas adicionales que nos permitan crear programación más robusta. En este proyecto se usará `TypeScript` para construir aplicaciones en Angular. 
+
+Para instalar TypeScript dirigete a su [sitio oficial](https://www.typescriptlang.org/) donde podrás encontrar más información con respecto a la instalación.
+
+O bien hacerlo mediante NodeJS (Previamente instalado) e instalar TypeScript mediante NPM que es el gestor de paquetes. Abrir la terminal y ejecutar el siguiente comando: `npm install -g typescript`. Donde `-g` le indica que instale typescript de forma global, permitiendo tener accesible toda su funcionalidad en cualquier parte del sistema.
+
+<div align="center"><img src="descripcion/img/11_TS.png" width="70%"/></div>
+
+Para comprobar que se instaló correctamente se puede ejecutar el comando `tsc -v`, al ejecutarse nos mostrará la versión de TypeScript instalada. (Se recomienda reiniciar la computadora en caso de que aún no se vea reflejada la versión).
+
+<div align="center"><img src="descripcion/img/12_TSC.png" width="70%"/></div>
