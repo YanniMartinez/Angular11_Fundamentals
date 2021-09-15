@@ -109,3 +109,44 @@ O bien hacerlo mediante NodeJS (Previamente instalado) e instalar TypeScript med
 Para comprobar que se instaló correctamente se puede ejecutar el comando `tsc -v`, al ejecutarse nos mostrará la versión de TypeScript instalada. (Se recomienda reiniciar la computadora en caso de que aún no se vea reflejada la versión).
 
 <div align="center"><img src="descripcion/img/12_TSC.png" width="70%"/></div>
+
+## Manejo desde el terminal con Angular CLI
+
+Para poder usar la terminal de Angular debemos ejecutar el siguiente comando desde la terminal de nuestro Visual Studio Code `npm install -g @angular/cli`, al dar enter, instalará de forma global la consola de angular debido a la bandera `-g`.
+
+<div align="center"><img src="descripcion/img/13_Terminal.png" width="70%"/></div>
+
+Una vez que se haya instalado en la computadora podremos usar los comandos de Angular. Por ejemplo el comando `ng version` que nos devuelve la versión de nuestro Angular instalado previamente.
+
+<div align="center"><img src="descripcion/img/14_Version.png" width="70%"/></div>
+
+## Creando una aplicación desde cero
+
+Para crear una aplicación desde cero podemos ejecutar el siguiente comando `ng new nombreAplicacion` al ejecutarlo nos hará una serie de preguntas por ejemplo:
+* ¿Quieres que verifique de forma estricta?: Se suguiere ponerle **Sí**
+* ¿Quieres que exista enrutado?: Esto nos permite que exista navegación dentro de una aplicación Angular, para efectos del proyecto le indicarémos que **No**.
+* ¿Qué tipo de CSS desea utilizar?: Para efectos del proyecto podemos seleccionar la opción de **SCSS**.
+
+Y listo, con esto dejaremos que cargue el comando y nos genere los archivos necesarios para nuestra aplicación.
+
+<div align="center"><img src="descripcion/img/15_New.png" width="70%"/></div>
+
+## Crear un elemento
+
+Para ello podemos ejecutar el comando `ng generate` que nos permitirá crear cualquier elemento de Angular. Por ejemplo `ng generate component nombreComponente`.
+
+<div align="center"><img src="descripcion/img/15_New.png" width="70%"/></div>
+
+Si al ejecutar te sale un error como el siguiente tranquilo/a, lo marca porque no estamos posicionados en la carpeta del proyecto
+
+<div align="center"><img src="descripcion/img/16_Error.png" width="70%"/></div>
+
+Para solucionarlo simplemente podemos usar el comando `cd` que permite cambiar de directorio, por ejemplo: `cd nombreDirectorio`.
+Y ahora si ejecuta el comando anterior:
+
+<div align="center"><img src="descripcion/img/17_Generate.png" width="70%"/></div>
+
+Podemos verificarlo al ver nuestros archivos de la carpeta:
+
+<div align="center"><img src="descripcion/img/18_Comp.png" width="70%"/></div>
+
