@@ -23,8 +23,10 @@
 * [Partes de una App en Angular](#partes-de-una-app-en-angular-más-comunes)
 * [Instala NodeJS](#instala-node-js)
 * [Instala TypeScript](#instala-typescript)
-* 
-
+* [Manejo desde el terminal con Angular CLI](#manejo-desde-el-terminal-con-angular-cli)
+* [Creando una aplicación desde cero](#creando-una-aplicación-desde-cero)
+* [Crear un elemento](#crear-un-elemento)
+* [Analizando componentes importantes](#analizando-componentes-importantes)
 ## ¿Qué es Angular?
 
 Hoy en día Angular es una plataforma que puede ejecutarse en: 
@@ -150,3 +152,34 @@ Podemos verificarlo al ver nuestros archivos de la carpeta:
 
 <div align="center"><img src="descripcion/img/18_Comp.png" width="70%"/></div>
 
+## Analizando componentes importantes
+
+### e2e
+Si nos aparece una carpeta de nombre `e2e` hace referencia a un apartado muy importante dado que nos puede ayudar a hacer pruebas unitarias, permitiendo testear nuestra applicación.
+Si quisieramos ejecutarlo deberiamos poner el comando `ng e2e`. Abrirá una instancia del navegador y verificará que estén correctos los valores para la prueba.
+
+### node_modules
+
+Dentro de esta carpeta podremos encontrar todos los paquetes relacionados a nuestro proyecto, a medida que crezca el proyecto, es probable que en este apartado se sumen más paquetes. Es importante saber que a pesar de que esta carpeta es grande en un entorno local, no significa que será lo mismo en la implementación dado que sólo usaremos unos cuantos componentes a la hora de desplegarla, pero esto se verá más adelante.
+
+Es importante saber que esta carpeta normalmente no estará incluida en repositorios o sitios semejantes debido a que es pesada (De hecho en este repositorio no deberias verla), es por ello que debemos dar un vistazo al archivo llamado **package.json** que es el encargado de mostrar las diferentes instancias que necesite el proyecto para funcionar.
+
+¿Pero que hago si quiero hacer el proyecto pero no me incluye esta carpeta?
+
+Sencillo, lo que debes hacer es dirigirte a tu linea de comandos y ejecutar el comando `npm install`, este comando lo que hará es leer todos los datos nuestro archivo package.json e instalará todos los modulos que necesita, es decir, todo aquello que necesita para poder funcionar.
+
+<div align="center"><img src="descripcion/img/19_Package.png" width="70%"/></div>
+
+### Carpeta src
+
+Es la carpeta en la que más se trabaja, dado que ahí está o estará todo el código fuente que se vaya desarrollando a lo largo del proyecto.
+
+Dentro de esta carpeta ubicamos `index.html` que es el archivo más importante de la aplicación dado que como se vio anteriormente, es el punto de partida para la app.
+
+Dentro de esta carpeta tenemos:
+
+* Carpeta **app**: Que alojará todo el código fuente de nuestra aplicación, es aquí en donde desarrollaremos los componentes, los modulos, servicios y demás elementos relacionados con TypeScript. De hecho nos viene un ejemplo en la carpeta **test1** y dentro el archivo `.ts` es donde estariamos ubicando toda la parte lógica de nuestro componente mientras que en `.html` es el esqueleto y el `.css` hace referencia a la parte visual.
+
+* Carpeta **assets**: Es donde se guardarán las imagenes, archivos adicionales e incluso algunos scripts.
+
+* Carpeta **enviroments**: Es donde estaremos definiendo el contexto de la app. Es importante que en el archivo `enviroment.ts` encontrarémos una variable llamada `production:false` esto debido a que en este momento estamos en la fase de desarrollo, a la hora de mandarla a producción deberemos cambiarla a `true`.
